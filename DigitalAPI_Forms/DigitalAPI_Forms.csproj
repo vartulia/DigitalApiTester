@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2061C38-D773-4632-93B6-9C5069422D31}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DigitalAPI_Forms</RootNamespace>
+    <AssemblyName>DigitalAPI_Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\AccountActivateClass.cs" />
+    <Compile Include="Forms\AccountUnlockUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountUnlockUC.Designer.cs">
+      <DependentUpon>AccountUnlockUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AMLinvenueEventsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AMLinvenueEventsUC.Designer.cs">
+      <DependentUpon>AMLinvenueEventsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BundleBetPricingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\BundleBetPricingUC.Designer.cs">
+      <DependentUpon>BundleBetPricingUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BundleBetUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\BundleBetUC.Designer.cs">
+      <DependentUpon>BundleBetUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScanRetailTicketUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ScanRetailTicketUC.Designer.cs">
+      <DependentUpon>ScanRetailTicketUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AccountBlanceUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountBlanceUC.Designer.cs">
+      <DependentUpon>AccountBlanceUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AccountStatement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountStatement.Designer.cs">
+      <DependentUpon>AccountStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AccountStatementEnhancedUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountStatementEnhancedUC.Designer.cs">
+      <DependentUpon>AccountStatementEnhancedUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AccountStatementRecent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountStatementRecent.Designer.cs">
+      <DependentUpon>AccountStatementRecent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ActivateAccountUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ActivateAccountUC.Designer.cs">
+      <DependentUpon>ActivateAccountUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AuthenticateOauthUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AuthenticateOauthUC.Designer.cs">
+      <DependentUpon>AuthenticateOauthUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BatchBettingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\BatchBettingUC.Designer.cs">
+      <DependentUpon>BatchBettingUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CancelBetUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CancelBetUC.Designer.cs">
+      <DependentUpon>CancelBetUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CardOrdering.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CardOrdering.Designer.cs">
+      <DependentUpon>CardOrdering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\cashoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\cashoutUC.Designer.cs">
+      <DependentUpon>cashoutUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CompetitionsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CompetitionsUC.Designer.cs">
+      <DependentUpon>CompetitionsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DepositEnquiryUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DepositEnquiryUC.Designer.cs">
+      <DependentUpon>DepositEnquiryUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EFT_Registration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\EFT_Registration.Designer.cs">
+      <DependentUpon>EFT_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmailVerification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\EmailVerification.Designer.cs">
+      <DependentUpon>EmailVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FixedOddsBettingMultiUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\FixedOddsBettingMultiUC.Designer.cs">
+      <DependentUpon>FixedOddsBettingMultiUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FixedOddsSellLiveBet_MultiUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\FixedOddsSellLiveBet_MultiUC.Designer.cs">
+      <DependentUpon>FixedOddsSellLiveBet_MultiUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FOBettingLiveBetUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\FOBettingLiveBetUC.Designer.cs">
+      <DependentUpon>FOBettingLiveBetUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FOBettingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\FOBettingUC.Designer.cs">
+      <DependentUpon>FOBettingUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ForgetPassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ForgetPassword.Designer.cs">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FutureMeetingsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\FutureMeetingsUC.Designer.cs">
+      <DependentUpon>FutureMeetingsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FutureRacesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\FutureRacesUC.Designer.cs">
+      <DependentUpon>FutureRacesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\getAccountDetailsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\getAccountDetailsUC.Designer.cs">
+      <DependentUpon>getAccountDetailsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InVenueCommissionsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\InVenueCommissionsUC.Designer.cs">
+      <DependentUpon>InVenueCommissionsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InVenueConfigurationUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\InVenueConfigurationUC.Designer.cs">
+      <DependentUpon>InVenueConfigurationUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InVenueDisplayDevicesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\InVenueDisplayDevicesUC.Designer.cs">
+      <DependentUpon>InVenueDisplayDevicesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InVenueTerminalsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\InVenueTerminalsUC.Designer.cs">
+      <DependentUpon>InVenueTerminalsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InVenueVenueUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\InVenueVenueUC.Designer.cs">
+      <DependentUpon>InVenueVenueUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\logWritterClass.cs" />
+    <Compile Include="Forms\AccountPreferencesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountPreferencesUC.Designer.cs">
+      <DependentUpon>AccountPreferencesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MarketCompMatchUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MarketCompMatchUC.Designer.cs">
+      <DependentUpon>MarketCompMatchUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MarketCompTournUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MarketCompTournUC.Designer.cs">
+      <DependentUpon>MarketCompTournUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MarketsCompetitionUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MarketsCompetitionUC.Designer.cs">
+      <DependentUpon>MarketsCompetitionUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MarketsCompMatchUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MarketsCompMatchUC.Designer.cs">
+      <DependentUpon>MarketsCompMatchUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MarketsCompTournMatchUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MarketsCompTournMatchUC.Designer.cs">
+      <DependentUpon>MarketsCompTournMatchUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MarketsCompTournUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MarketsCompTournUC.Designer.cs">
+      <DependentUpon>MarketsCompTournUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MatchCompTournUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MatchCompTournUC.Designer.cs">
+      <DependentUpon>MatchCompTournUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MatchTournamentUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MatchTournamentUC.Designer.cs">
+      <DependentUpon>MatchTournamentUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MatchesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MatchesUC.Designer.cs">
+      <DependentUpon>MatchesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MatchCompetitionUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MatchCompetitionUC.Designer.cs">
+      <DependentUpon>MatchCompetitionUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MeetingRacesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MeetingRacesUC.Designer.cs">
+      <DependentUpon>MeetingRacesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MeetingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MeetingUC.Designer.cs">
+      <DependentUpon>MeetingUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\multiLegClass.cs" />
+    <Compile Include="Forms\NextToGoRacingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\NextToGoRacingUC.Designer.cs">
+      <DependentUpon>NextToGoRacingUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NextToGoUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\NextToGoUC.Designer.cs">
+      <DependentUpon>NextToGoUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OpenAccountUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\OpenAccountUC.Designer.cs">
+      <DependentUpon>OpenAccountUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PariSellUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\PariSellUC.Designer.cs">
+      <DependentUpon>PariSellUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\AuthenticateUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AuthenticateUC.Designer.cs">
+      <DependentUpon>AuthenticateUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RacesUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\RacesUC.Designer.cs">
+      <DependentUpon>RacesUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ResetPin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ResetPin.Designer.cs">
+      <DependentUpon>ResetPin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\singleLegClass.cs" />
+    <Compile Include="Forms\SportsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\SportsUC.Designer.cs">
+      <DependentUpon>SportsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TournamentsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\TournamentsUC.Designer.cs">
+      <DependentUpon>TournamentsUC.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\AccountUnlockUC.resx">
+      <DependentUpon>AccountUnlockUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AMLinvenueEventsUC.resx">
+      <DependentUpon>AMLinvenueEventsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BundleBetPricingUC.resx">
+      <DependentUpon>BundleBetPricingUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BundleBetUC.resx">
+      <DependentUpon>BundleBetUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScanRetailTicketUC.resx">
+      <DependentUpon>ScanRetailTicketUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AccountBlanceUC.resx">
+      <DependentUpon>AccountBlanceUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AccountStatement.resx">
+      <DependentUpon>AccountStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AccountStatementEnhancedUC.resx">
+      <DependentUpon>AccountStatementEnhancedUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AccountStatementRecent.resx">
+      <DependentUpon>AccountStatementRecent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ActivateAccountUC.resx">
+      <DependentUpon>ActivateAccountUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AuthenticateOauthUC.resx">
+      <DependentUpon>AuthenticateOauthUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BatchBettingUC.resx">
+      <DependentUpon>BatchBettingUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CancelBetUC.resx">
+      <DependentUpon>CancelBetUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CardOrdering.resx">
+      <DependentUpon>CardOrdering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\cashoutUC.resx">
+      <DependentUpon>cashoutUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CompetitionsUC.resx">
+      <DependentUpon>CompetitionsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DepositEnquiryUC.resx">
+      <DependentUpon>DepositEnquiryUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EFT_Registration.resx">
+      <DependentUpon>EFT_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmailVerification.resx">
+      <DependentUpon>EmailVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FixedOddsBettingMultiUC.resx">
+      <DependentUpon>FixedOddsBettingMultiUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FixedOddsSellLiveBet_MultiUC.resx">
+      <DependentUpon>FixedOddsSellLiveBet_MultiUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FOBettingLiveBetUC.resx">
+      <DependentUpon>FOBettingLiveBetUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FOBettingUC.resx">
+      <DependentUpon>FOBettingUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AccountPreferencesUC.resx">
+      <DependentUpon>AccountPreferencesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FutureMeetingsUC.resx">
+      <DependentUpon>FutureMeetingsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FutureRacesUC.resx">
+      <DependentUpon>FutureRacesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\getAccountDetailsUC.resx">
+      <DependentUpon>getAccountDetailsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InVenueCommissionsUC.resx">
+      <DependentUpon>InVenueCommissionsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InVenueConfigurationUC.resx">
+      <DependentUpon>InVenueConfigurationUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InVenueDisplayDevicesUC.resx">
+      <DependentUpon>InVenueDisplayDevicesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InVenueTerminalsUC.resx">
+      <DependentUpon>InVenueTerminalsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InVenueVenueUC.resx">
+      <DependentUpon>InVenueVenueUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MarketCompMatchUC.resx">
+      <DependentUpon>MarketCompMatchUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MarketCompTournUC.resx">
+      <DependentUpon>MarketCompTournUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MarketsCompetitionUC.resx">
+      <DependentUpon>MarketsCompetitionUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MarketsCompMatchUC.resx">
+      <DependentUpon>MarketsCompMatchUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MarketsCompTournMatchUC.resx">
+      <DependentUpon>MarketsCompTournMatchUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MarketsCompTournUC.resx">
+      <DependentUpon>MarketsCompTournUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MatchCompTournUC.resx">
+      <DependentUpon>MatchCompTournUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MatchTournamentUC.resx">
+      <DependentUpon>MatchTournamentUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MatchesUC.resx">
+      <DependentUpon>MatchesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MatchCompetitionUC.resx">
+      <DependentUpon>MatchCompetitionUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MeetingRacesUC.resx">
+      <DependentUpon>MeetingRacesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MeetingUC.resx">
+      <DependentUpon>MeetingUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NextToGoRacingUC.resx">
+      <DependentUpon>NextToGoRacingUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NextToGoUC.resx">
+      <DependentUpon>NextToGoUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OpenAccountUC.resx">
+      <DependentUpon>OpenAccountUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PariSellUC.resx">
+      <DependentUpon>PariSellUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\AuthenticateUC.resx">
+      <DependentUpon>AuthenticateUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RacesUC.resx">
+      <DependentUpon>RacesUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ResetPin.resx">
+      <DependentUpon>ResetPin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SportsUC.resx">
+      <DependentUpon>SportsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TournamentsUC.resx">
+      <DependentUpon>TournamentsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
