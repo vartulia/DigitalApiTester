@@ -19,9 +19,14 @@ namespace DigitalAPI_Forms
     {
 
         static string token;
-        static string AMLtoken = "5065157db002f1d9f70cbf8f1489fb8806748308";
+        //static string AMLtoken = "5065157db002f1d9f70cbf8f1489fb8806748308";
+        static string AMLtoken = "e60a776ce4abb0525744986edd002c4acba829ea";
         static string accountNo;
         static bool oAuthMode;
+
+        public string clientId = "b0eb33de-aa74-4832-a7c9-a7599b85b552";
+        public string clientSecret = "b0eb33de-aa74-4832-a7c9-a7599b85b552";
+        
 
         Logger log = new Logger(@"");
 
@@ -3949,7 +3954,7 @@ namespace DigitalAPI_Forms
                     if (webRequest != null)
                     {
                         webRequest.Method = "GET";
-                        webRequest.Headers.Add("Authorization", "Bearer " + token);
+                        webRequest.Headers.Add("Authorization", "Bearer " + AMLtoken);
                         webRequest.ServicePoint.Expect100Continue = false;
                         webRequest.Timeout = 20000;
                         webRequest.ContentType = "application/json";
@@ -4079,9 +4084,7 @@ namespace DigitalAPI_Forms
                         ResponseTB.Refresh();
                         requestTB.Refresh();
                         ResTimeLBL.Text = "Response Time: " + ((timeItTook < TimeSpan.Zero) ? "-" : "") + timeItTook.ToString(@"hh\:mm\:ss\:ff");
-
-
-
+                        
                     }
                 }
                 catch (WebException error)
@@ -4285,7 +4288,7 @@ namespace DigitalAPI_Forms
             {
                 string ret = string.Empty;
                 WebClient webClient = new WebClient();
-                Uri uri = new Uri(AddressCB.Text + "/v1/service-invenue-aml/configs?keys=SSC_AVAILABLE&keys=SSC_AVAILABLE");
+                Uri uri = new Uri(AddressCB.Text + "/v1/service-invenue-aml/configs?keys=SSC_AVAILABLE");
                 var webRequest = System.Net.WebRequest.Create(uri) as HttpWebRequest;
 
                 //authentication
@@ -4466,6 +4469,7 @@ namespace DigitalAPI_Forms
                         DateTime start = DateTime.Now;
                         HttpWebResponse resp = (HttpWebResponse)webRequest.GetResponse();
                         TimeSpan timeItTook = DateTime.Now - start;
+
                         //print the response status code
                         int statusCode = getResponseCode(resp);
                         PrintStatusCode(resp, statusCode);
@@ -8362,6 +8366,47 @@ namespace DigitalAPI_Forms
         {
             statusCodeLBL.Text = "Response Code: " + code.ToString() + " [" + response.StatusCode.ToString() + "]";
             statusCodeLBL.Refresh();
+        }
+
+        private void AddressCB_Leave(object sender, EventArgs e)
+        {
+            if (AddressCB.Text == "https://uat01.webapi.tab.com.au" || AddressCB.Text == "https://uat01.beta.tab.com.au")
+            {
+                enviornmentLBL.Text = "YARRA";
+                clientId = "b0eb33de-aa74-4832-a7c9-a7599b85b552";
+                clientSecret = "b0eb33de-aa74-4832-a7c9-a7599b85b552";
+                AMLtoken = "5065157db002f1d9f70cbf8f1489fb8806748308";
+            }
+            else if (AddressCB.Text == "https://uat02.beta.tab.com.au" || AddressCB.Text == "https://uat02.webapi.tab.com.au")
+            {
+                enviornmentLBL.Text = "MURRAY";
+                clientId = "b0eb33de-aa74-4832-a7c9-a7599b85b552";
+                clientSecret = "b0eb33de-aa74-4832-a7c9-a7599b85b552";
+                AMLtoken = "5065157db002f1d9f70cbf8f1489fb8806748308";
+            }
+            else if (AddressCB.Text == "http://10.26.128.209:8080")
+            {
+                enviornmentLBL.Text = "MEKONG";
+                clientId = "b0eb33de-aa74-4832-a7c9-a7599b85b552";
+                clientSecret = "b0eb33de-aa74-4832-a7c9-a7599b85b552";
+                AMLtoken = "5065157db002f1d9f70cbf8f1489fb8806748308";
+            }
+            else if (AddressCB.Text == "https://pre.webapi.tab.com.au" || AddressCB.Text == "https://pre-api.beta.tab.com.au")
+            {
+                enviornmentLBL.Text = "NILE";
+                clientId = "3846e606-3985-4d00-b1bd-5bf5c7b0faa3";
+                clientSecret = "84e4376a-11d3-4d3a-8313-5f5757272f09";
+                AMLtoken = "e60a776ce4abb0525744986edd002c4acba829ea";
+            }
+            else if (AddressCB.Text == "https://api.beta.tab.com.au")
+            {
+                enviornmentLBL.Text = "PROD - BE CAREFULL!!";
+            }
+            else
+            {
+                enviornmentLBL.Text = "";
+            }
+
         }
     } 
 }
