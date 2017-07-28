@@ -65,6 +65,8 @@
             this.referenceNumberTB = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.commentTB = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.operatorIdFinaliseTB = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.finaliseTB = new System.Windows.Forms.Button();
@@ -84,8 +86,6 @@
             this.eventIdHostReleaseTB = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.commentTB = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -123,16 +123,16 @@
             // 
             // operatorNameTB
             // 
-            this.operatorNameTB.Location = new System.Drawing.Point(290, 143);
+            this.operatorNameTB.Location = new System.Drawing.Point(266, 143);
             this.operatorNameTB.Name = "operatorNameTB";
-            this.operatorNameTB.Size = new System.Drawing.Size(129, 20);
+            this.operatorNameTB.Size = new System.Drawing.Size(153, 20);
             this.operatorNameTB.TabIndex = 28;
-            this.operatorNameTB.Text = "Anthony Vart\'s";
+            this.operatorNameTB.Text = "Digital API Test Tool Operator";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(209, 146);
+            this.label6.Location = new System.Drawing.Point(178, 146);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 13);
             this.label6.TabIndex = 27;
@@ -144,7 +144,7 @@
             this.descriptionTB.Name = "descriptionTB";
             this.descriptionTB.Size = new System.Drawing.Size(171, 20);
             this.descriptionTB.TabIndex = 26;
-            this.descriptionTB.Text = "This is a test description";
+            this.descriptionTB.Text = "Digital API Test Tool Description";
             // 
             // label5
             // 
@@ -525,6 +525,25 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Finalise Request";
             // 
+            // commentTB
+            // 
+            this.commentTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.commentTB.Location = new System.Drawing.Point(19, 142);
+            this.commentTB.Multiline = true;
+            this.commentTB.Name = "commentTB";
+            this.commentTB.Size = new System.Drawing.Size(132, 43);
+            this.commentTB.TabIndex = 33;
+            this.commentTB.Text = "This is a test tool comment!!";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(16, 128);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(54, 13);
+            this.label19.TabIndex = 32;
+            this.label19.Text = "Comment:";
+            // 
             // operatorIdFinaliseTB
             // 
             this.operatorIdFinaliseTB.Location = new System.Drawing.Point(88, 109);
@@ -714,25 +733,6 @@
             this.label17.Size = new System.Drawing.Size(60, 13);
             this.label17.TabIndex = 22;
             this.label17.Text = "Resolution:";
-            // 
-            // commentTB
-            // 
-            this.commentTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.commentTB.Location = new System.Drawing.Point(19, 142);
-            this.commentTB.Multiline = true;
-            this.commentTB.Name = "commentTB";
-            this.commentTB.Size = new System.Drawing.Size(132, 43);
-            this.commentTB.TabIndex = 33;
-            this.commentTB.Text = "This is a test tool comment!!";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(16, 128);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(54, 13);
-            this.label19.TabIndex = 32;
-            this.label19.Text = "Comment:";
             // 
             // AMLinvenueEventsUC
             // 

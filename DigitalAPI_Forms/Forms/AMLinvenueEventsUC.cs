@@ -245,10 +245,11 @@ namespace DigitalAPI_Forms
 
         private void AMLinvenueEventsUC_Load(object sender, EventArgs e)
         {
-            string clientId = "b0eb33de-aa74-4832-a7c9-a7599b85b552";
-            string clientSecret = "b0eb33de-aa74-4832-a7c9-a7599b85b552";
-            string request = "client_id=" + clientId + "&client_secret=" + clientSecret + "&grant_type=client_credentials&claims[user.surname]=Vartuli&claims[user.givenName]=Anthony&claims[user.fullName]=Anthony%20Vartuli&claims[user.id]=Anthony.Vartuli%40example.com&claims[ssc-aml.permissions][read][unprocessedEvents]=true&claims[ssc-aml.permissions][write][unprocessedEvents]=true&claims[ssc-aml.permissions][read][processedEvents]=true&claims[ssc-aml.permissions][write][processedEvents]=true&claims[ssc-aml.permissions][read][config]=true&claims[ssc-aml.permissions][write][config]=true";
-            digitalAPI.AuthenticateOauth(clientId, clientSecret, request);
+            
+            //string clientId = "15528eaa-9efc-4e7a-ba1e-e6946b4f033a";
+            //string clientSecret = "f425403b-be48-4416-9884-c0202e5488a0";
+            string request = "client_id=" + digitalAPI.clientId + "&client_secret=" + digitalAPI.clientSecret + "&grant_type=client_credentials&claims[user.surname]=Vartuli&claims[user.givenName]=Anthony&claims[user.fullName]=Anthony%20Vartuli&claims[user.id]=Anthony.Vartuli%40example.com&claims[ssc-aml.permissions][read][unprocessedEvents]=true&claims[ssc-aml.permissions][write][unprocessedEvents]=true&claims[ssc-aml.permissions][read][processedEvents]=true&claims[ssc-aml.permissions][write][processedEvents]=true&claims[ssc-aml.permissions][read][config]=true&claims[ssc-aml.permissions][write][config]=true";
+            digitalAPI.AuthenticateOauth(digitalAPI.clientId, digitalAPI.clientSecret, request);
         }
     }
 }

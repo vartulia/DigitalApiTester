@@ -52,6 +52,7 @@
             this.InVenueCB = new System.Windows.Forms.ComboBox();
             this.InVenueLBL = new System.Windows.Forms.Label();
             this.statusCodeLBL = new System.Windows.Forms.Label();
+            this.enviornmentLBL = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ReponseLBL
@@ -135,6 +136,7 @@
             this.AddressCB.Size = new System.Drawing.Size(162, 21);
             this.AddressCB.TabIndex = 9;
             this.AddressCB.Text = "https://uat01.beta.tab.com.au";
+            this.AddressCB.SelectedIndexChanged += new System.EventHandler(this.AddressCB_Leave);
             // 
             // RacingInfoCB
             // 
@@ -312,11 +314,23 @@
             this.statusCodeLBL.TabIndex = 22;
             this.statusCodeLBL.Text = "Response Code:";
             // 
+            // enviornmentLBL
+            // 
+            this.enviornmentLBL.AutoSize = true;
+            this.enviornmentLBL.BackColor = System.Drawing.SystemColors.Highlight;
+            this.enviornmentLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enviornmentLBL.Location = new System.Drawing.Point(714, 238);
+            this.enviornmentLBL.Name = "enviornmentLBL";
+            this.enviornmentLBL.Size = new System.Drawing.Size(48, 18);
+            this.enviornmentLBL.TabIndex = 23;
+            this.enviornmentLBL.Text = "Yarra";
+            // 
             // DigitalAPItester
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1223, 742);
+            this.Controls.Add(this.enviornmentLBL);
             this.Controls.Add(this.statusCodeLBL);
             this.Controls.Add(this.InVenueCB);
             this.Controls.Add(this.InVenueLBL);
@@ -339,7 +353,7 @@
             this.Controls.Add(this.addressLBL);
             this.Controls.Add(this.ReponseLBL);
             this.Name = "DigitalAPItester";
-            this.Text = "Digital API tester v2.13";
+            this.Text = "Digital API tester v2.14";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.DigitalAPItester_Load);
             this.ResumeLayout(false);
@@ -377,6 +391,7 @@
         private System.Windows.Forms.ComboBox InVenueCB;
         private System.Windows.Forms.Label InVenueLBL;
         private System.Windows.Forms.Label statusCodeLBL;
+        private System.Windows.Forms.Label enviornmentLBL;
     }
 }
 
