@@ -74,6 +74,12 @@
     <Compile Include="Forms\BundleBetUC.Designer.cs">
       <DependentUpon>BundleBetUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\RetailDeviceUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\RetailDeviceUC.Designer.cs">
+      <DependentUpon>RetailDeviceUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ScanRetailTicketUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -396,6 +402,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BundleBetUC.resx">
       <DependentUpon>BundleBetUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RetailDeviceUC.resx">
+      <DependentUpon>RetailDeviceUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ScanRetailTicketUC.resx">
       <DependentUpon>ScanRetailTicketUC.cs</DependentUpon>

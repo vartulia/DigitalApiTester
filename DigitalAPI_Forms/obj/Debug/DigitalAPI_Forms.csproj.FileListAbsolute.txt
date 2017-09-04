@@ -2027,3 +2027,4 @@ C:\source\DigitalApiTester\DigitalAPI_Forms\obj\Debug\DigitalAPI_Forms.ResetPin.
 C:\source\DigitalApiTester\DigitalAPI_Forms\obj\Debug\DigitalAPI_Forms.SportsUC.resources
 C:\source\DigitalApiTester\DigitalAPI_Forms\obj\Debug\DigitalAPI_Forms.TournamentsUC.resources
 C:\source\DigitalApiTester\DigitalAPI_Forms\obj\Debug\DigitalAPI_Forms.csproj.GenerateResource.Cache
+C:\source\DigitalApiTester\DigitalAPI_Forms\obj\Debug\DigitalAPI_Forms.RetailDeviceUC.resources

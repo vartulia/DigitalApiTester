@@ -287,7 +287,8 @@
             "Venues",
             "Display-Devices",
             "Terminals",
-            "AML Event"});
+            "AML Event",
+            "Retail-Device"});
             this.InVenueCB.Location = new System.Drawing.Point(82, 157);
             this.InVenueCB.Name = "InVenueCB";
             this.InVenueCB.Size = new System.Drawing.Size(162, 21);
@@ -353,7 +354,7 @@
             this.Controls.Add(this.addressLBL);
             this.Controls.Add(this.ReponseLBL);
             this.Name = "DigitalAPItester";
-            this.Text = "Digital API tester v2.14";
+            this.Text = "Digital API tester v2.15";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.DigitalAPItester_Load);
             this.ResumeLayout(false);

@@ -1,0 +1,88 @@
+04-Sep-2017 11:01:28:598 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+04-Sep-2017 11:02:07:818 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+04-Sep-2017 11:02:09:449 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+04-Sep-2017 11:02:28:257 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+04-Sep-2017 11:02:31:602 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+04-Sep-2017 11:02:34:167 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+04-Sep-2017 11:02:54:884 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+04-Sep-2017 11:07:36:725 AM        Error :  General Error: Object reference not set to an instance of an object.
+04-Sep-2017 11:08:13:370 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+04-Sep-2017 11:19:55:077 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+04-Sep-2017 11:20:06:609 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+04-Sep-2017 11:21:21:546 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+04-Sep-2017 11:27:08:664 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"CONFLICT_ERROR","message":"Window is already occupied by another device and must be released before new allocation"}}
+04-Sep-2017 11:28:26:745 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+04-Sep-2017 11:28:50:516 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"CONFLICT_ERROR","message":"Window is already occupied by another device and must be released before new allocation"}}
+04-Sep-2017 11:51:09:000 AM        Error :  General Error: Object reference not set to an instance of an object.
+04-Sep-2017 11:54:41:468 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+04-Sep-2017 11:54:52:853 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+04-Sep-2017 12:02:37:628 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+04-Sep-2017 12:02:41:189 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"CONFLICT_ERROR","message":"Window is already occupied by another device and must be released before new allocation"}}
+04-Sep-2017 12:02:53:431 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"CONFLICT_ERROR","message":"Window is already occupied by another device and must be released before new allocation"}}
+04-Sep-2017 12:03:44:305 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"CONFLICT_ERROR","message":"Window is already occupied by another device and must be released before new allocation"}}
+04-Sep-2017 12:03:48:627 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+04-Sep-2017 12:03:58:063 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+04-Sep-2017 12:09:49:133 PM        Error :  General Error: Object reference not set to an instance of an object.
+04-Sep-2017 12:10:33:454 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"CONFLICT_ERROR","message":"Window is already occupied by another device and must be released before new allocation"}}
+04-Sep-2017 12:10:45:197 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"CONFLICT_ERROR","message":"Window is already occupied by another device and must be released before new allocation"}}
+04-Sep-2017 12:52:25:569 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"CONFLICT_ERROR","message":"Window is already occupied by another device and must be released before new allocation"}}
+04-Sep-2017 12:52:31:933 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+04-Sep-2017 12:52:34:986 PM        Error :  RetailDeviceDelete call: Details of reason: [] {0}{"error":{"code":"UNPROCESSABLE_ENTITY_ERROR","message":"Device is not currently configured"}}
+04-Sep-2017 12:52:41:770 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+04-Sep-2017 01:03:16:015 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+04-Sep-2017 01:08:07:089 PM        Error :  RetailDeviceDelete call: Details of reason: [] {0}{"error":{"code":"UNPROCESSABLE_ENTITY_ERROR","message":"Device is not currently configured"}}
+04-Sep-2017 01:09:41:040 PM        Error :  RetailDeviceDelete call: Details of reason: [] {0}{"error":{"code":"UNPROCESSABLE_ENTITY_ERROR","message":"Device is not currently configured"}}
+04-Sep-2017 01:09:41:992 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+04-Sep-2017 01:09:44:399 PM        Error :  RetailDeviceDelete call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+04-Sep-2017 01:09:46:228 PM        Error :  RetailDeviceDelete call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+04-Sep-2017 01:22:40:325 PM        Error :  RetailDeviceDelete call: Details of reason: [] {0}404 page not found
+
+04-Sep-2017 01:23:06:081 PM        Error :  RetailDeviceDelete call: Details of reason: [] {0}404 page not found
+
+04-Sep-2017 01:24:04:408 PM        Error :  RetailDeviceDelete call: Details of reason: [] {0}404 page not found
+
+04-Sep-2017 01:24:06:916 PM        Error :  RetailDeviceDelete call: Details of reason: [] {0}404 page not found
+
+04-Sep-2017 01:24:08:138 PM        Error :  RetailDeviceDelete call: Details of reason: [] {0}404 page not found
+
+04-Sep-2017 01:26:07:047 PM        Error :  General Error: Object reference not set to an instance of an object.
+04-Sep-2017 01:26:21:996 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"details":[{"path":"body.window_id","value":"","message":"should be an integer"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+04-Sep-2017 01:26:56:066 PM        Error :  RetailDeviceDelete call: Details of reason: [] {0}{"error":{"code":"UNPROCESSABLE_ENTITY_ERROR","message":"Device is not currently configured"}}
+04-Sep-2017 01:27:28:364 PM        Error :  RetailDeviceDelete call: Details of reason: [] {0}{"error":{"code":"UNPROCESSABLE_ENTITY_ERROR","message":"Device is not currently configured"}}
+04-Sep-2017 01:28:00:261 PM        Error :  General Error: Cannot send a content-body with this verb-type.
+04-Sep-2017 01:28:12:133 PM        Error :  General Error: Cannot send a content-body with this verb-type.
+04-Sep-2017 01:29:58:380 PM        Error :  accountBalance call: Details of reason: [] {0}404 page not found
+
+04-Sep-2017 01:33:43:828 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"METHOD_NOT_ALLOWED_ERROR","message":"GET is not allowed"}}
+04-Sep-2017 01:34:08:678 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"METHOD_NOT_ALLOWED_ERROR","message":"GET is not allowed"}}
+04-Sep-2017 01:39:17:354 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+04-Sep-2017 01:39:47:899 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+04-Sep-2017 01:39:50:210 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+04-Sep-2017 01:40:02:513 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+04-Sep-2017 01:40:05:970 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+04-Sep-2017 01:40:34:971 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+04-Sep-2017 01:40:37:587 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+04-Sep-2017 01:40:38:965 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+04-Sep-2017 01:40:39:777 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+04-Sep-2017 01:40:39:912 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+04-Sep-2017 01:40:40:079 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+04-Sep-2017 01:40:40:241 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+04-Sep-2017 01:40:40:615 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+04-Sep-2017 01:40:46:684 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+04-Sep-2017 01:44:56:083 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+04-Sep-2017 01:44:59:591 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+04-Sep-2017 02:03:51:395 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"details":[{"path":"body.venue_id","value":"","message":"should be an integer"},{"path":"body.window_id","value":"","message":"should be an integer"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+04-Sep-2017 02:07:20:632 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
