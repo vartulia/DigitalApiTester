@@ -8112,7 +8112,6 @@ namespace DigitalAPI_Forms
                 log.LogError("InVenueCachePoll call: Details of reason: [] {0}" + resp, System.Diagnostics.EventLogEntryType.Error);
             }
         }
-
         public void InVenueCachePoll(InVenueTerminalsUC.terminal term)
         {
             string ret = string.Empty;
@@ -8206,6 +8205,261 @@ namespace DigitalAPI_Forms
             }
 
         }
+        public void RetailDevice(RetailDeviceUC.Configuation conf)
+        {
+            {
+                string ret = string.Empty;
+                WebClient webClient = new WebClient();
+
+                Uri uri = new Uri(AddressCB.Text.Replace("webapi", "beta") + "/v1/retail-device-service/configuration/devices/" + conf.security_id);
+                var webRequest = System.Net.WebRequest.Create(uri) as HttpWebRequest;
+                StreamWriter requestWriter;
+
+                //Get a New generated UUID
+                string guild = returnGUID();
+
+                // authentication
+                var cache = new CredentialCache(); ;
+                cache.Add(uri, "Basic", new NetworkCredential("tablet", "Tabc0rp2014"));
+                webRequest.Credentials = cache;
+                //This will ignore certificate type issues.
+                ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(delegate { return true; });
+
+                try
+                {
+
+                    if (webRequest != null)
+                    {
+                        webRequest.Method = "POST";
+                        webRequest.ServicePoint.Expect100Continue = false;
+                        webRequest.Timeout = 20000;
+                        webRequest.ContentType = "application/json";
+                        if (oAuthMode == true)
+                        {
+                            webRequest.Headers.Add("Authorization", "Bearer " + token);
+                        }
+                        else
+                        {
+                            webRequest.Headers["tabcorpauth"] = token;
+                        }
+
+                        string postData = "";
+                        postData = "{" +
+                                        "\"venue_id\":\"" + conf.venue_id + "\"," +
+                                        "\"window_id\":\"" + conf.window_id + "\"" +
+                                  "}";
+                        requestTB.Text = FormatJson(postData);
+
+                        requestTB.Text = FormatJson(postData);
+                        //POST the data.
+                        using (requestWriter = new StreamWriter(webRequest.GetRequestStream()))
+                        {
+                            requestWriter.Write(postData);
+                        }
+
+                        DateTime start = DateTime.Now;
+                        if (LogMsgCKB.Checked)
+                        {
+                            log.LogError("RetailDevice call: Request: " + postData, System.Diagnostics.EventLogEntryType.Information);
+                        }
+                        HttpWebResponse resp = (HttpWebResponse)webRequest.GetResponse();
+                        TimeSpan timeItTook = DateTime.Now - start;
+                        //print the response status code
+                        int statusCode = getResponseCode(resp);
+                        PrintStatusCode(resp, statusCode);
+
+
+                        Stream resStream = resp.GetResponseStream();
+                        StreamReader reader = new StreamReader(resStream);
+                        ret = reader.ReadToEnd();
+                        requestWriter.Close();
+                        Console.WriteLine(ret);
+                        if (LogMsgCKB.Checked)
+                        {
+                            log.LogError("RetailDevice call: Response:\r\n" + FormatJson(ret.ToString()), System.Diagnostics.EventLogEntryType.SuccessAudit);
+                            log.LogError("RetailDevice call: Time taken " + timeItTook, System.Diagnostics.EventLogEntryType.Information);
+                        }
+                        var jss = new JavaScriptSerializer();
+                        dynamic response = jss.DeserializeObject(ret);
+                        ResponseTB.Text = FormatJson(ret.ToString());
+                        ResTimeLBL.Text = "Response Time: " + ((timeItTook < TimeSpan.Zero) ? "-" : "") + timeItTook.ToString(@"hh\:mm\:ss\:ff");
+                        amount = "";
+                    }
+                }
+                catch (WebException error)
+                {
+                    PrintExceptionCode(error); //Print Error code e.g. 504 Service Unavailable on bottom of screen.
+                    var resp = new StreamReader(error.Response.GetResponseStream()).ReadToEnd();
+                    ResponseTB.Text = resp;
+                    ResponseTB.Refresh();
+                    log.LogError("RetailDevice call: Details of reason: [] {0}" + resp, System.Diagnostics.EventLogEntryType.Error);
+                }
+            }
+        }
+        public void RetailDeviceDelete(RetailDeviceUC.Configuation conf)
+        {
+            {
+                string ret = string.Empty;
+                WebClient webClient = new WebClient();
+
+                Uri uri = new Uri(AddressCB.Text.Replace("webapi", "beta") + "/v1/retail-device-service/configuration/devices/" + conf.security_id);
+                var webRequest = System.Net.WebRequest.Create(uri) as HttpWebRequest;
+                StreamWriter requestWriter;
+
+                //Get a New generated UUID
+                string guild = returnGUID();
+
+                // authentication
+                var cache = new CredentialCache(); ;
+                cache.Add(uri, "Basic", new NetworkCredential("tablet", "Tabc0rp2014"));
+                webRequest.Credentials = cache;
+                //This will ignore certificate type issues.
+                ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(delegate { return true; });
+
+                try
+                {
+
+                    if (webRequest != null)
+                    {
+                        webRequest.Method = "DELETE";
+                        webRequest.ServicePoint.Expect100Continue = false;
+                        webRequest.Timeout = 20000;
+                        webRequest.ContentType = "application/json";
+                        if (oAuthMode == true)
+                        {
+                            webRequest.Headers.Add("Authorization", "Bearer " + token);
+                        }
+                        else
+                        {
+                            webRequest.Headers["tabcorpauth"] = token;
+                        }
+
+                        string postData = "{}";
+                        
+                        requestTB.Text = FormatJson(postData);
+                        requestTB.Text = FormatJson(postData);
+                        //POST the data.
+                        using (requestWriter = new StreamWriter(webRequest.GetRequestStream()))
+                        {
+                            requestWriter.Write(postData);
+                        }
+
+                        DateTime start = DateTime.Now;
+                        if (LogMsgCKB.Checked)
+                        {
+                            log.LogError("RetailDeviceDelete call: Request: " + postData, System.Diagnostics.EventLogEntryType.Information);
+                        }
+                        HttpWebResponse resp = (HttpWebResponse)webRequest.GetResponse();
+                        TimeSpan timeItTook = DateTime.Now - start;
+                        //print the response status code
+                        int statusCode = getResponseCode(resp);
+                        PrintStatusCode(resp, statusCode);
+
+
+                        Stream resStream = resp.GetResponseStream();
+                        StreamReader reader = new StreamReader(resStream);
+                        ret = reader.ReadToEnd();
+                        requestWriter.Close();
+                        Console.WriteLine(ret);
+                        if (LogMsgCKB.Checked)
+                        {
+                            log.LogError("RetailDeviceDelete call: Response:\r\n" + FormatJson(ret.ToString()), System.Diagnostics.EventLogEntryType.SuccessAudit);
+                            log.LogError("RetailDeviceDelete call: Time taken " + timeItTook, System.Diagnostics.EventLogEntryType.Information);
+                        }
+                        var jss = new JavaScriptSerializer();
+                        dynamic response = jss.DeserializeObject(ret);
+                        ResponseTB.Text = FormatJson(ret.ToString());
+                        ResTimeLBL.Text = "Response Time: " + ((timeItTook < TimeSpan.Zero) ? "-" : "") + timeItTook.ToString(@"hh\:mm\:ss\:ff");
+                        amount = "";
+                    }
+                }
+                catch (WebException error)
+                {
+                    PrintExceptionCode(error); //Print Error code e.g. 504 Service Unavailable on bottom of screen.
+                    var resp = new StreamReader(error.Response.GetResponseStream()).ReadToEnd();
+                    ResponseTB.Text = resp;
+                    ResponseTB.Refresh();
+                    log.LogError("RetailDeviceDelete call: Details of reason: [] {0}" + resp, System.Diagnostics.EventLogEntryType.Error);
+                }
+            }
+        }
+        public void RetailDeviceGET(RetailDeviceUC.Configuation conf)
+        {
+            {
+                string ret = string.Empty;
+                WebClient webClient = new WebClient();
+
+                Uri uri = new Uri(AddressCB.Text.Replace("webapi", "beta") + "/v1/invenue-service/device-configuration/" + conf.security_id);
+                var webRequest = System.Net.WebRequest.Create(uri) as HttpWebRequest;
+                StreamWriter requestWriter;
+
+                //Get a New generated UUID
+                string guild = returnGUID();
+
+                // authentication
+                var cache = new CredentialCache(); ;
+                cache.Add(uri, "Basic", new NetworkCredential("tablet", "Tabc0rp2014"));
+                webRequest.Credentials = cache;
+                //This will ignore certificate type issues.
+                ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(delegate { return true; });
+
+                try
+                {
+
+                    if (webRequest != null)
+                    {
+                        webRequest.Method = "GET";
+                        if (oAuthMode == true)
+                        {
+                            webRequest.Headers.Add("Authorization", "Bearer " + token);
+                        }
+                        else
+                        {
+                            webRequest.Headers["tabcorpauth"] = token;
+                        }
+                        webRequest.ServicePoint.Expect100Continue = false;
+                        webRequest.Timeout = 20000;
+                        webRequest.ContentType = "application/json";
+
+                        requestTB.Text = FormatJson(uri.ToString());
+                        DateTime start = DateTime.Now;
+                        HttpWebResponse resp = (HttpWebResponse)webRequest.GetResponse();
+                        //print the response status code
+                        int statusCode = getResponseCode(resp);
+                        PrintStatusCode(resp, statusCode);
+
+                        TimeSpan timeItTook = DateTime.Now - start;
+                        if (LogMsgCKB.Checked)
+                        {
+                            log.LogError("AccountBalance call: Request: ", System.Diagnostics.EventLogEntryType.Information);
+                        }
+
+                        Stream resStream = resp.GetResponseStream();
+                        StreamReader reader = new StreamReader(resStream);
+                        ret = reader.ReadToEnd();
+                        if (LogMsgCKB.Checked)
+                        {
+                            log.LogError("AccountBalance call: Response:\r\n" + FormatJson(ret.ToString()), System.Diagnostics.EventLogEntryType.SuccessAudit);
+                            log.LogError("AccountBalance call: Time taken " + timeItTook, System.Diagnostics.EventLogEntryType.Information);
+                        }
+
+                        var jss = new JavaScriptSerializer();
+                        dynamic response = jss.DeserializeObject(ret);
+                        ResponseTB.Text = FormatJson(ret.ToString());
+                        ResTimeLBL.Text = "Response Time: " + ((timeItTook < TimeSpan.Zero) ? "-" : "") + timeItTook.ToString(@"hh\:mm\:ss\:ff");
+                    }
+                }
+                catch (WebException error)
+                {
+                    PrintExceptionCode(error); //Print Error code e.g. 504 Service Unavailable on bottom of screen.
+                    var resp = new StreamReader(error.Response.GetResponseStream()).ReadToEnd();
+                    ResponseTB.Text = resp;
+                    ResponseTB.Refresh();
+                    log.LogError("accountBalance call: Details of reason: [] {0}" + resp, System.Diagnostics.EventLogEntryType.Error);
+                }
+            }
+        }
+
 
 
 
@@ -8336,12 +8590,20 @@ namespace DigitalAPI_Forms
             {
                 panel1.Controls.Clear();
                 panel1.Visible = true;
-                AMLinvenueEventsUC  usr6 = new AMLinvenueEventsUC(this);
+                AMLinvenueEventsUC usr6 = new AMLinvenueEventsUC(this);
                 usr6.Show();
                 panel1.Controls.Add(usr6);
             }
+            if (InVenueCB.Text == "Retail-Device")
+            {
+                panel1.Controls.Clear();
+                panel1.Visible = true;
+                RetailDeviceUC usr7 = new RetailDeviceUC(this);
+                usr7.Show();
+                panel1.Controls.Add(usr7);
+            }
         }
-        
+
         public int PrintExceptionCode(WebException e)
         {
             int statusCode = 0;
