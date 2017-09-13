@@ -8211,7 +8211,7 @@ namespace DigitalAPI_Forms
                 string ret = string.Empty;
                 WebClient webClient = new WebClient();
 
-                Uri uri = new Uri(AddressCB.Text.Replace("webapi", "beta") + "/v1/retail-device-service/configuration/devices/" + conf.security_id);
+                Uri uri = new Uri(AddressCB.Text.Replace("webapi", "beta") + "/v1/invenue-service/configuration/devices/" + conf.security_id);
                 var webRequest = System.Net.WebRequest.Create(uri) as HttpWebRequest;
                 StreamWriter requestWriter;
 
@@ -8302,7 +8302,7 @@ namespace DigitalAPI_Forms
                 string ret = string.Empty;
                 WebClient webClient = new WebClient();
 
-                Uri uri = new Uri(AddressCB.Text.Replace("webapi", "beta") + "/v1/retail-device-service/configuration/devices/" + conf.security_id);
+                Uri uri = new Uri(AddressCB.Text.Replace("webapi", "beta") + "/v1/invenue-service/configuration/devices/" + conf.security_id);
                 var webRequest = System.Net.WebRequest.Create(uri) as HttpWebRequest;
                 StreamWriter requestWriter;
 
@@ -8389,7 +8389,7 @@ namespace DigitalAPI_Forms
                 string ret = string.Empty;
                 WebClient webClient = new WebClient();
 
-                Uri uri = new Uri(AddressCB.Text.Replace("webapi", "beta") + "/v1/invenue-service/device-configuration/" + conf.security_id);
+                Uri uri = new Uri(AddressCB.Text.Replace("webapi", "beta") + "/v1/invenue-service/configuration/devices/" + conf.security_id);
                 var webRequest = System.Net.WebRequest.Create(uri) as HttpWebRequest;
                 StreamWriter requestWriter;
 
@@ -8431,7 +8431,7 @@ namespace DigitalAPI_Forms
                         TimeSpan timeItTook = DateTime.Now - start;
                         if (LogMsgCKB.Checked)
                         {
-                            log.LogError("AccountBalance call: Request: ", System.Diagnostics.EventLogEntryType.Information);
+                            log.LogError("RetailDeviceGET call: Request: ", System.Diagnostics.EventLogEntryType.Information);
                         }
 
                         Stream resStream = resp.GetResponseStream();
@@ -8439,8 +8439,8 @@ namespace DigitalAPI_Forms
                         ret = reader.ReadToEnd();
                         if (LogMsgCKB.Checked)
                         {
-                            log.LogError("AccountBalance call: Response:\r\n" + FormatJson(ret.ToString()), System.Diagnostics.EventLogEntryType.SuccessAudit);
-                            log.LogError("AccountBalance call: Time taken " + timeItTook, System.Diagnostics.EventLogEntryType.Information);
+                            log.LogError("RetailDeviceGET call: Response:\r\n" + FormatJson(ret.ToString()), System.Diagnostics.EventLogEntryType.SuccessAudit);
+                            log.LogError("RetailDeviceGET call: Time taken " + timeItTook, System.Diagnostics.EventLogEntryType.Information);
                         }
 
                         var jss = new JavaScriptSerializer();
@@ -8455,7 +8455,83 @@ namespace DigitalAPI_Forms
                     var resp = new StreamReader(error.Response.GetResponseStream()).ReadToEnd();
                     ResponseTB.Text = resp;
                     ResponseTB.Refresh();
-                    log.LogError("accountBalance call: Details of reason: [] {0}" + resp, System.Diagnostics.EventLogEntryType.Error);
+                    log.LogError("RetailDeviceGET call: Details of reason: [] {0}" + resp, System.Diagnostics.EventLogEntryType.Error);
+                }
+            }
+        }
+        public void LocationWindowsGET(string location)
+        {
+            {
+                string ret = string.Empty;
+                WebClient webClient = new WebClient();
+
+                Uri uri = new Uri(AddressCB.Text.Replace("webapi", "beta") + "/v1/invenue-service/locations/"+ location +"/windows");
+                var webRequest = System.Net.WebRequest.Create(uri) as HttpWebRequest;
+                StreamWriter requestWriter;
+
+                //Get a New generated UUID
+                string guild = returnGUID();
+
+                // authentication
+                var cache = new CredentialCache(); ;
+                cache.Add(uri, "Basic", new NetworkCredential("tablet", "Tabc0rp2014"));
+                webRequest.Credentials = cache;
+                //This will ignore certificate type issues.
+                ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(delegate { return true; });
+
+                try
+                {
+
+                    if (webRequest != null)
+                    {
+                        webRequest.Method = "GET";
+                        if (oAuthMode == true)
+                        {
+                            webRequest.Headers.Add("Authorization", "Bearer " + token);
+                        }
+                        else
+                        {
+                            webRequest.Headers["tabcorpauth"] = token;
+                        }
+                        webRequest.ServicePoint.Expect100Continue = false;
+                        webRequest.Timeout = 20000;
+                        webRequest.ContentType = "application/json";
+
+                        requestTB.Text = FormatJson(uri.ToString());
+                        DateTime start = DateTime.Now;
+                        HttpWebResponse resp = (HttpWebResponse)webRequest.GetResponse();
+                        //print the response status code
+                        int statusCode = getResponseCode(resp);
+                        PrintStatusCode(resp, statusCode);
+
+                        TimeSpan timeItTook = DateTime.Now - start;
+                        if (LogMsgCKB.Checked)
+                        {
+                            log.LogError("LocationWindowsGET call: Request: ", System.Diagnostics.EventLogEntryType.Information);
+                        }
+
+                        Stream resStream = resp.GetResponseStream();
+                        StreamReader reader = new StreamReader(resStream);
+                        ret = reader.ReadToEnd();
+                        if (LogMsgCKB.Checked)
+                        {
+                            log.LogError("LocationWindowsGET call: Response:\r\n" + FormatJson(ret.ToString()), System.Diagnostics.EventLogEntryType.SuccessAudit);
+                            log.LogError("LocationWindowsGET call: Time taken " + timeItTook, System.Diagnostics.EventLogEntryType.Information);
+                        }
+
+                        var jss = new JavaScriptSerializer();
+                        dynamic response = jss.DeserializeObject(ret);
+                        ResponseTB.Text = FormatJson(ret.ToString());
+                        ResTimeLBL.Text = "Response Time: " + ((timeItTook < TimeSpan.Zero) ? "-" : "") + timeItTook.ToString(@"hh\:mm\:ss\:ff");
+                    }
+                }
+                catch (WebException error)
+                {
+                    PrintExceptionCode(error); //Print Error code e.g. 504 Service Unavailable on bottom of screen.
+                    var resp = new StreamReader(error.Response.GetResponseStream()).ReadToEnd();
+                    ResponseTB.Text = resp;
+                    ResponseTB.Refresh();
+                    log.LogError("LocationWindowsGET call: Details of reason: [] {0}" + resp, System.Diagnostics.EventLogEntryType.Error);
                 }
             }
         }
