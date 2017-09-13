@@ -53,5 +53,11 @@ namespace DigitalAPI_Forms
             public string window_id;
 
         }
+
+        private void getWindowsTB_Click(object sender, EventArgs e)
+        {
+            string location = LocationIdTB.Text;
+            digitalAPI.LocationWindowsGET(location);
+        }
     }
 }

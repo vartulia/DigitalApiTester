@@ -86,3 +86,158 @@
 04-Sep-2017 01:44:59:591 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
 04-Sep-2017 02:03:51:395 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"details":[{"path":"body.venue_id","value":"","message":"should be an integer"},{"path":"body.window_id","value":"","message":"should be an integer"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
 04-Sep-2017 02:07:20:632 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+06-Sep-2017 11:00:11:914 AM        Error :  AMLrelease call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"The following fields are invalid: operatorId should be a string."}}
+06-Sep-2017 11:00:35:188 AM        Error :  AMLrelease call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"The following fields are invalid: operatorId should be a string."}}
+06-Sep-2017 11:00:53:646 AM        Error :  AMLrelease call: Details of reason: [] {0}{"error":"invalid_token","code":401,"error_description":"The access token provided is invalid."}
+
+07-Sep-2017 08:57:24:910 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+07-Sep-2017 08:57:27:360 PM        Error :  RetailDevice call: Details of reason: [] {0}{"message": "Server Error"}
+
+07-Sep-2017 08:57:28:639 PM        Error :  RetailDeviceDelete call: Details of reason: [] {0}{"message": "Server Error"}
+
+07-Sep-2017 08:57:29:606 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+07-Sep-2017 08:57:40:320 PM        Error :  getAccountPreferences call: Details of reason: [] {0}{"error":{"code":"AUTHENTICATION_REQUIRED_ERROR","message":"Missing <tabcorpauth> HTTP header"}}
+07-Sep-2017 08:57:59:000 PM        Error :  Sports call: Details of reason: [] {0}{"message": "Server Error"}
+
+07-Sep-2017 09:03:54:116 PM        Error :  AMLevent call: Details of reason: [] {0}{"message": "Server Error"}
+
+07-Sep-2017 09:17:01:830 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+07-Sep-2017 09:17:01:955 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+07-Sep-2017 09:17:02:050 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+07-Sep-2017 09:17:02:144 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+07-Sep-2017 09:17:02:223 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+07-Sep-2017 09:17:02:301 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+07-Sep-2017 09:17:02:367 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+07-Sep-2017 09:17:02:429 PM        Error :  accountBalance call: Details of reason: [] {0}{"message": "Server Error"}
+
+07-Sep-2017 09:17:02:507 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+07-Sep-2017 10:14:59:934 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+07-Sep-2017 10:15:00:033 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+07-Sep-2017 10:15:00:110 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+07-Sep-2017 10:15:00:203 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+07-Sep-2017 10:15:00:275 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+07-Sep-2017 10:15:10:619 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"message":"Device has not been found in configuration system","code":"DEVICE_NOT_FOUND","details":null}}
+07-Sep-2017 10:15:19:552 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"message":"Device has not been found in configuration system","code":"DEVICE_NOT_FOUND","details":null}}
+07-Sep-2017 10:15:47:130 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"message":"Device has not been found in configuration system","code":"DEVICE_NOT_FOUND","details":null}}
+07-Sep-2017 10:15:56:432 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"message":"Device has not been found in configuration system","code":"DEVICE_NOT_FOUND","details":null}}
+07-Sep-2017 10:15:59:178 PM        Error :  RetailDeviceDelete call: Details of reason: [] {0}{"error":{"message":"Device has not been found in configuration system","code":"DEVICE_NOT_FOUND","details":null}}
+12-Sep-2017 01:52:22:111 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:52:26:400 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:52:28:739 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:52:30:732 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:52:43:626 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:52:46:805 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"message":"Device has not been found in configuration system","code":"DEVICE_NOT_FOUND","details":null}}
+12-Sep-2017 01:52:49:268 PM        Error :  RetailDeviceDelete call: Details of reason: [] {0}{"error":{"message":"Device has not been found in configuration system","code":"DEVICE_NOT_FOUND","details":null}}
+12-Sep-2017 01:52:50:097 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:52:50:619 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"message":"Device has not been found in configuration system","code":"DEVICE_NOT_FOUND","details":null}}
+12-Sep-2017 01:53:38:932 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:54:36:268 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:54:39:996 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:54:41:919 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:54:44:559 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:54:47:491 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:54:49:788 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:54:54:864 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:54:59:849 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:55:06:239 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:56:37:787 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:56:39:365 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:56:39:671 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:56:39:814 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:56:39:966 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 01:56:40:168 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+12-Sep-2017 02:04:29:251 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"METHOD_NOT_ALLOWED_ERROR","message":"GET is not allowed"}}
+12-Sep-2017 02:15:07:626 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+12-Sep-2017 02:15:28:783 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+12-Sep-2017 02:15:44:556 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+12-Sep-2017 02:16:20:232 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:16:22:217 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:16:54:312 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:17:19:376 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:17:42:083 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+12-Sep-2017 02:17:47:098 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:18:17:460 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:18:40:400 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:24:46:804 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:24:47:712 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:24:47:874 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:25:02:282 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+12-Sep-2017 02:25:08:045 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+12-Sep-2017 02:25:13:076 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+12-Sep-2017 02:28:29:796 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:30:03:316 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:30:04:474 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:30:04:680 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:30:04:807 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:30:05:064 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:30:10:231 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+12-Sep-2017 02:30:13:060 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:30:35:852 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+12-Sep-2017 02:32:05:779 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:32:07:820 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:32:17:989 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:32:25:120 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:32:29:429 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+12-Sep-2017 02:32:40:086 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"CONFLICT_ERROR","message":"Window is already occupied by another device and must be released before new allocation"}}
+12-Sep-2017 02:32:51:342 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:33:26:159 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:34:58:083 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:35:06:111 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+12-Sep-2017 02:35:21:914 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+12-Sep-2017 02:35:39:371 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+12-Sep-2017 02:36:10:797 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+12-Sep-2017 02:36:53:973 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+12-Sep-2017 02:36:55:622 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+12-Sep-2017 02:36:56:369 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+12-Sep-2017 02:36:56:456 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+12-Sep-2017 02:36:56:535 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+12-Sep-2017 02:36:56:680 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+12-Sep-2017 02:37:34:704 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+12-Sep-2017 02:37:36:049 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+12-Sep-2017 02:38:49:227 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+12-Sep-2017 02:43:07:183 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+12-Sep-2017 02:45:36:892 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:45:41:232 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:46:02:660 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:46:04:243 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:46:08:328 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:46:11:791 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:46:22:209 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:46:23:817 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:46:24:905 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:46:26:117 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:46:28:723 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 02:59:35:419 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+12-Sep-2017 02:59:41:290 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+12-Sep-2017 02:59:43:752 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+12-Sep-2017 03:00:45:342 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+12-Sep-2017 03:01:30:746 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"FORBIDDEN_ERROR","message":"Selling device is Unauthorized"}}
+12-Sep-2017 03:02:13:178 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"CONFLICT_ERROR","message":"Window is already occupied by another device and must be released before new allocation"}}
+12-Sep-2017 03:02:17:692 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"CONFLICT_ERROR","message":"Window is already occupied by another device and must be released before new allocation"}}
+12-Sep-2017 03:02:34:267 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+12-Sep-2017 03:03:09:873 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"CONFLICT_ERROR","message":"Window is already occupied by another device and must be released before new allocation"}}
+12-Sep-2017 03:26:15:136 PM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"CONFLICT_ERROR","message":"Window is already occupied by another device and must be released before new allocation"}}
+12-Sep-2017 03:29:22:051 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+12-Sep-2017 03:29:32:588 PM        Error :  accountBalance call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device configuration not found"}}
+13-Sep-2017 11:22:27:645 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+13-Sep-2017 11:22:32:915 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+13-Sep-2017 11:22:46:571 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+13-Sep-2017 11:23:12:115 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+13-Sep-2017 11:23:25:970 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+13-Sep-2017 11:23:34:155 AM        Error :  RetailDevice call: Details of reason: [] {0}{"error":{"code":"BAD_REQUEST_ERROR","message":"Invalid Venue and Window Combination"}}
+13-Sep-2017 02:16:06:555 PM        Error :  General Error: Object reference not set to an instance of an object.
+13-Sep-2017 02:59:11:576 PM        Error :  RetailDeviceGET call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+13-Sep-2017 02:59:17:082 PM        Error :  RetailDeviceGET call: Details of reason: [] {0}{"error":{"code":"UNPROCESSABLE_ENTITY_ERROR","message":"Device is not currently configured"}}
+13-Sep-2017 02:59:22:660 PM        Error :  RetailDeviceGET call: Details of reason: [] {0}{"error":{"code":"UNPROCESSABLE_ENTITY_ERROR","message":"Device is not currently configured"}}
+13-Sep-2017 02:59:28:094 PM        Error :  RetailDeviceGET call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+13-Sep-2017 02:59:33:339 PM        Error :  RetailDeviceGET call: Details of reason: [] {0}{"error":{"code":"UNPROCESSABLE_ENTITY_ERROR","message":"Device is not currently configured"}}
+13-Sep-2017 02:59:53:438 PM        Error :  RetailDeviceGET call: Details of reason: [] {0}{"error":{"code":"UNPROCESSABLE_ENTITY_ERROR","message":"Device is not currently configured"}}
+13-Sep-2017 02:59:54:620 PM        Error :  RetailDeviceGET call: Details of reason: [] {0}{"error":{"code":"UNPROCESSABLE_ENTITY_ERROR","message":"Device is not currently configured"}}
+13-Sep-2017 02:59:54:763 PM        Error :  RetailDeviceGET call: Details of reason: [] {0}{"error":{"code":"UNPROCESSABLE_ENTITY_ERROR","message":"Device is not currently configured"}}
+13-Sep-2017 03:01:06:176 PM        Error :  RetailDeviceGET call: Details of reason: [] {0}{"error":{"code":"NOT_FOUND_ERROR","message":"Device not found"}}
+13-Sep-2017 03:02:06:632 PM        Error :  RetailDeviceGET call: Details of reason: [] {0}{"error":{"code":"UNPROCESSABLE_ENTITY_ERROR","message":"Device is not currently configured"}}
+13-Sep-2017 03:06:44:939 PM        Error :  RetailDeviceGET call: Details of reason: [] {0}{"error":{"code":"UNPROCESSABLE_ENTITY_ERROR","message":"Device is not currently configured"}}
