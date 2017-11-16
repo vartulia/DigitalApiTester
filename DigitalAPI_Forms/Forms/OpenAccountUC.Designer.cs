@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Request = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.middleNameTB = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.venueIdTB = new System.Windows.Forms.TextBox();
             this.stateCB = new System.Windows.Forms.ComboBox();
             this.KenoCkB = new System.Windows.Forms.CheckBox();
             this.genderCB = new System.Windows.Forms.ComboBox();
@@ -75,67 +79,101 @@
             this.loopLBL = new System.Windows.Forms.Label();
             this.loopTB = new System.Windows.Forms.TextBox();
             this.CallApiBTN = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.venueIdTB = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
+            this.Request.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // Request
             // 
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.venueIdTB);
-            this.groupBox1.Controls.Add(this.stateCB);
-            this.groupBox1.Controls.Add(this.KenoCkB);
-            this.groupBox1.Controls.Add(this.genderCB);
-            this.groupBox1.Controls.Add(this.regulatoryAuthorityCB);
-            this.groupBox1.Controls.Add(this.channelCB);
-            this.groupBox1.Controls.Add(this.streetLBL);
-            this.groupBox1.Controls.Add(this.stateLBL);
-            this.groupBox1.Controls.Add(this.streetNumberLBL);
-            this.groupBox1.Controls.Add(this.suburbLBL);
-            this.groupBox1.Controls.Add(this.postCodeLBL);
-            this.groupBox1.Controls.Add(this.countryLBL);
-            this.groupBox1.Controls.Add(this.countryTB);
-            this.groupBox1.Controls.Add(this.postCodeTB);
-            this.groupBox1.Controls.Add(this.suburbTB);
-            this.groupBox1.Controls.Add(this.streetTB);
-            this.groupBox1.Controls.Add(this.streetNumberTB);
-            this.groupBox1.Controls.Add(this.lastNameLBL);
-            this.groupBox1.Controls.Add(this.genderLBL);
-            this.groupBox1.Controls.Add(this.dateOfBirthLBL);
-            this.groupBox1.Controls.Add(this.emailLBL);
-            this.groupBox1.Controls.Add(this.firstNameLBL);
-            this.groupBox1.Controls.Add(this.titleLBL);
-            this.groupBox1.Controls.Add(this.mobileNumberLBL);
-            this.groupBox1.Controls.Add(this.TitleTB);
-            this.groupBox1.Controls.Add(this.firstNameTB);
-            this.groupBox1.Controls.Add(this.lastNameTB);
-            this.groupBox1.Controls.Add(this.dateOfBirthTB);
-            this.groupBox1.Controls.Add(this.emailTB);
-            this.groupBox1.Controls.Add(this.mobileNumberTB);
-            this.groupBox1.Controls.Add(this.channelLBL);
-            this.groupBox1.Controls.Add(this.maxDepLimitLBL);
-            this.groupBox1.Controls.Add(this.maximumDepositLimitLBL);
-            this.groupBox1.Controls.Add(this.regulatoryAuthorityLBL);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.challengeQuestionLBL);
-            this.groupBox1.Controls.Add(this.accountPinLBL);
-            this.groupBox1.Controls.Add(this.accountPasswordLBL);
-            this.groupBox1.Controls.Add(this.maximumDepositLimitTB);
-            this.groupBox1.Controls.Add(this.receiveMarketingPromotionsTB);
-            this.groupBox1.Controls.Add(this.challengeAnswerTB);
-            this.groupBox1.Controls.Add(this.challengeQuestionTB);
-            this.groupBox1.Controls.Add(this.accountPinTB);
-            this.groupBox1.Controls.Add(this.accountPasswordTB);
-            this.groupBox1.Controls.Add(this.loopLBL);
-            this.groupBox1.Controls.Add(this.loopTB);
-            this.groupBox1.Controls.Add(this.CallApiBTN);
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(911, 210);
-            this.groupBox1.TabIndex = 10;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Request";
+            this.Request.Controls.Add(this.label1);
+            this.Request.Controls.Add(this.middleNameTB);
+            this.Request.Controls.Add(this.label2);
+            this.Request.Controls.Add(this.venueIdTB);
+            this.Request.Controls.Add(this.stateCB);
+            this.Request.Controls.Add(this.KenoCkB);
+            this.Request.Controls.Add(this.genderCB);
+            this.Request.Controls.Add(this.regulatoryAuthorityCB);
+            this.Request.Controls.Add(this.channelCB);
+            this.Request.Controls.Add(this.streetLBL);
+            this.Request.Controls.Add(this.stateLBL);
+            this.Request.Controls.Add(this.streetNumberLBL);
+            this.Request.Controls.Add(this.suburbLBL);
+            this.Request.Controls.Add(this.postCodeLBL);
+            this.Request.Controls.Add(this.countryLBL);
+            this.Request.Controls.Add(this.countryTB);
+            this.Request.Controls.Add(this.postCodeTB);
+            this.Request.Controls.Add(this.suburbTB);
+            this.Request.Controls.Add(this.streetTB);
+            this.Request.Controls.Add(this.streetNumberTB);
+            this.Request.Controls.Add(this.lastNameLBL);
+            this.Request.Controls.Add(this.genderLBL);
+            this.Request.Controls.Add(this.dateOfBirthLBL);
+            this.Request.Controls.Add(this.emailLBL);
+            this.Request.Controls.Add(this.firstNameLBL);
+            this.Request.Controls.Add(this.titleLBL);
+            this.Request.Controls.Add(this.mobileNumberLBL);
+            this.Request.Controls.Add(this.TitleTB);
+            this.Request.Controls.Add(this.firstNameTB);
+            this.Request.Controls.Add(this.lastNameTB);
+            this.Request.Controls.Add(this.dateOfBirthTB);
+            this.Request.Controls.Add(this.emailTB);
+            this.Request.Controls.Add(this.mobileNumberTB);
+            this.Request.Controls.Add(this.channelLBL);
+            this.Request.Controls.Add(this.maxDepLimitLBL);
+            this.Request.Controls.Add(this.maximumDepositLimitLBL);
+            this.Request.Controls.Add(this.regulatoryAuthorityLBL);
+            this.Request.Controls.Add(this.label4);
+            this.Request.Controls.Add(this.challengeQuestionLBL);
+            this.Request.Controls.Add(this.accountPinLBL);
+            this.Request.Controls.Add(this.accountPasswordLBL);
+            this.Request.Controls.Add(this.maximumDepositLimitTB);
+            this.Request.Controls.Add(this.receiveMarketingPromotionsTB);
+            this.Request.Controls.Add(this.challengeAnswerTB);
+            this.Request.Controls.Add(this.challengeQuestionTB);
+            this.Request.Controls.Add(this.accountPinTB);
+            this.Request.Controls.Add(this.accountPasswordTB);
+            this.Request.Controls.Add(this.loopLBL);
+            this.Request.Controls.Add(this.loopTB);
+            this.Request.Controls.Add(this.CallApiBTN);
+            this.Request.Location = new System.Drawing.Point(3, 3);
+            this.Request.Name = "Request";
+            this.Request.Size = new System.Drawing.Size(911, 210);
+            this.Request.TabIndex = 10;
+            this.Request.TabStop = false;
+            this.Request.Text = "Request";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(450, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 13);
+            this.label1.TabIndex = 105;
+            this.label1.Text = "Middle Name:";
+            // 
+            // middleNameTB
+            // 
+            this.middleNameTB.Location = new System.Drawing.Point(528, 29);
+            this.middleNameTB.Name = "middleNameTB";
+            this.middleNameTB.Size = new System.Drawing.Size(100, 20);
+            this.middleNameTB.TabIndex = 104;
+            this.middleNameTB.Text = "TWOPPPPPPPPPPPPPPPPP";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(784, 66);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.TabIndex = 103;
+            this.label2.Text = "Venue Id:";
+            // 
+            // venueIdTB
+            // 
+            this.venueIdTB.Location = new System.Drawing.Point(839, 63);
+            this.venueIdTB.Name = "venueIdTB";
+            this.venueIdTB.Size = new System.Drawing.Size(61, 20);
+            this.venueIdTB.TabIndex = 102;
+            this.venueIdTB.Text = "300";
             // 
             // stateCB
             // 
@@ -551,39 +589,22 @@
             this.CallApiBTN.UseVisualStyleBackColor = true;
             this.CallApiBTN.Click += new System.EventHandler(this.CallApiBTN_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(784, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
-            this.label2.TabIndex = 103;
-            this.label2.Text = "Venue Id:";
-            // 
-            // venueIdTB
-            // 
-            this.venueIdTB.Location = new System.Drawing.Point(839, 63);
-            this.venueIdTB.Name = "venueIdTB";
-            this.venueIdTB.Size = new System.Drawing.Size(61, 20);
-            this.venueIdTB.TabIndex = 102;
-            this.venueIdTB.Text = "300";
-            // 
             // OpenAccountUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.Request);
             this.Name = "OpenAccountUC";
             this.Size = new System.Drawing.Size(937, 244);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Request.ResumeLayout(false);
+            this.Request.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox Request;
         private System.Windows.Forms.Label loopLBL;
         private System.Windows.Forms.TextBox loopTB;
         private System.Windows.Forms.Button CallApiBTN;
@@ -632,5 +653,7 @@
         private System.Windows.Forms.ComboBox stateCB;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox venueIdTB;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox middleNameTB;
     }
 }

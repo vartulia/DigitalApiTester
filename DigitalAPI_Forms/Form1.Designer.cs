@@ -354,7 +354,7 @@
             this.Controls.Add(this.addressLBL);
             this.Controls.Add(this.ReponseLBL);
             this.Name = "DigitalAPItester";
-            this.Text = "Digital API tester v2.16";
+            this.Text = "Digital API tester v2.17";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.DigitalAPItester_Load);
             this.ResumeLayout(false);

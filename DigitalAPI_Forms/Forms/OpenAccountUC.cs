@@ -46,6 +46,7 @@ namespace DigitalAPI_Forms
                 oa.customerDetails.dateOfBirth = dateOfBirthTB.Text;
                 oa.customerDetails.email = emailTB.Text;
                 oa.customerDetails.mobileNumber = mobileNumberTB.Text;
+                oa.customerDetails.middleName = middleNameTB.Text;
 
                 oa.customerDetails.address = new Address();
                 oa.customerDetails.address.streetNumber = streetNumberTB.Text;
@@ -89,6 +90,7 @@ namespace DigitalAPI_Forms
             public string title { get; set; }
             public string firstName { get; set; }
             public string lastName { get; set; }
+            public string middleName { get; set; }            
             public string gender { get; set; }
             public string dateOfBirth { get; set; }
             public string email { get; set; }
@@ -135,7 +137,6 @@ namespace DigitalAPI_Forms
 
 
         }
-
-
+        
     }
 }
