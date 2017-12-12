@@ -244,3 +244,27 @@
 16-Nov-2017 01:16:39:455 PM SuccessAudit :  OpenAccount call: AccountId:1096436 Jurisdiction:VIC PIN:1122 Password:password02
 16-Nov-2017 01:20:50:686 PM SuccessAudit :  OpenAccount call: AccountId:1096440 Jurisdiction:VIC PIN:1122 Password:password02
 16-Nov-2017 01:21:46:157 PM SuccessAudit :  OpenAccount call: AccountId:1096441 Jurisdiction:VIC PIN:1122 Password:password02
+22-Nov-2017 01:54:40:986 PM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+22-Nov-2017 01:54:50:984 PM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+22-Nov-2017 01:54:53:248 PM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+22-Nov-2017 01:54:53:882 PM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+22-Nov-2017 01:54:54:714 PM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+22-Nov-2017 01:54:58:941 PM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+22-Nov-2017 01:54:59:167 PM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+22-Nov-2017 01:54:59:399 PM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+22-Nov-2017 01:54:59:595 PM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+22-Nov-2017 01:54:59:804 PM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+22-Nov-2017 01:54:59:997 PM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+22-Nov-2017 01:55:00:173 PM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+22-Nov-2017 01:55:00:326 PM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+22-Nov-2017 01:55:00:562 PM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+22-Nov-2017 02:57:02:497 PM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+23-Nov-2017 11:45:22:016 AM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+23-Nov-2017 11:54:34:883 AM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+23-Nov-2017 11:54:36:230 AM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+23-Nov-2017 11:54:36:395 AM        Error :  Authenticate call: Details of reason: [] {0}ProtocolError
+05-Dec-2017 02:02:24:551 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].enableMultiplier","value":"false","message":"should be a boolean"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+05-Dec-2017 02:02:34:739 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].enableMultiplier","value":"true","message":"should be a boolean"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+05-Dec-2017 02:02:54:121 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].enableMultiplier","value":"false","message":"should be a boolean"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+05-Dec-2017 02:03:33:508 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].enableMultiplier","value":"False","message":"should be a boolean"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+05-Dec-2017 02:03:39:486 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].enableMultiplier","value":"true","message":"should be a boolean"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}

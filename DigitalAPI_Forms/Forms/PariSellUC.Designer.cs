@@ -89,7 +89,8 @@
             "DAILY_DOUBLE",
             "QUADDIE",
             "EARLY_QUADDIE",
-            "BIG6"});
+            "BIG6",
+            "TRIO"});
             this.BetTypeCB.Location = new System.Drawing.Point(105, 23);
             this.BetTypeCB.Name = "BetTypeCB";
             this.BetTypeCB.Size = new System.Drawing.Size(113, 21);

@@ -508,7 +508,7 @@ namespace DigitalAPI_Forms
             if (BetTypeCB.Text == "QUADDIE" || BetTypeCB.Text == "EARLY_QUADDIE")
             {
                 raceNumberTB.Text = "0";
-            }
+            }           
 
 
 

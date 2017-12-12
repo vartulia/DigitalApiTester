@@ -2871,7 +2871,7 @@ namespace DigitalAPI_Forms
                             postData = "{" +
                                     "\"bets\":[{" +
                                       "\"stake\":\"$" + InvestAmt + "\"," +
-                                      "\"enableMultiplier\":\"$" + multiplier + "\"," +
+                                      "\"enableMultiplier\":" + multiplier + "," +
                                       "\"type\":\"FIXED_ODDS\"," +
                                       "\"propositions\":[" + propJson + "]," +
                                       "\"combinedPrice\":\"" + combinedPrice + "\"," +
