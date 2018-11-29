@@ -12,6 +12,7 @@ using System.Net;
 using System.Net.Security;
 using System.IO;
 using System.Runtime.Serialization.Json;
+using System.Runtime.Serialization;
 
 namespace DigitalAPI_Forms
 {
@@ -47,7 +48,11 @@ namespace DigitalAPI_Forms
                 bet.combinedPrice = combinedPriceTB.Text;
             }
             bet.stake = StakeTB.Text;
-            bet.enableMultiplier = enableMultiplier;
+            if (BetTypeCB.Text != "SAME_GAME_MULTI")
+            {
+                bet.enableMultiplier = enableMultiplier;
+            }
+
             bet.type = "FIXED_ODDS";
 
             List<Bet> betList = new List<Bet>();
@@ -67,10 +72,10 @@ namespace DigitalAPI_Forms
                 propCountLBL.Text = "0 Legs.";
             }
         }
-       
 
 
-        public string jsonRequestToString(BundleBets betObject )
+
+        public string jsonRequestToString(BundleBets betObject)
         {
 
             MemoryStream stream1 = new MemoryStream();
@@ -80,7 +85,7 @@ namespace DigitalAPI_Forms
             stream1.Position = 0;
             StreamReader sr = new StreamReader(stream1);
 
-            
+
             string postData = sr.ReadToEnd();
 
             return postData;
@@ -99,24 +104,71 @@ namespace DigitalAPI_Forms
         {
             Proposition proposition = new Proposition();
 
-            proposition.propositionId = prop;
-            proposition.odds = OddsTB.Text;
-            proposition.type = "WIN";
+
+            if (BetTypeCB.Text == "SAME_GAME_MULTI")
+            {
+                proposition.propositionId = prop;
+                proposition.type = "WIN";
+            }
+            else
+            {
+                proposition.propositionId = prop;
+                proposition.odds = OddsTB.Text;
+                proposition.type = "WIN";
+            }
 
             return proposition;
         }
-        
+
 
         private void addLegBTN_Click(object sender, EventArgs e)
         {
-            
-                Leg leg = new Leg();
-                string[] propString = propositionIdTB.Text.Split(',');
-                if (BetTypeCB.Text == "BUNDLE")
-                {
-                    leg.odds = OddsTB.Text;
-                    leg.type = "BUNDLE";
 
+            Leg leg = new Leg();
+            string[] propString = propositionIdTB.Text.Split(',');
+            if (BetTypeCB.Text == "BUNDLE")
+            {
+                leg.odds = OddsTB.Text;
+                leg.type = "BUNDLE";
+
+                Proposition legProposition = new Proposition();
+                List<Proposition> legPropositionList = new List<Proposition>();
+
+                foreach (var prop in propString)
+                {
+                    legProposition = props(Convert.ToInt32(prop));
+                    legPropositionList.Add(legProposition);
+
+                }
+                leg.propositions = legPropositionList;
+                legList.Add(leg);
+            }
+            if (BetTypeCB.Text == "SAME_GAME_MULTI")
+            {
+                leg.odds = OddsTB.Text;
+                leg.type = "SAME_GAME_MULTI";
+
+                Proposition legProposition = new Proposition();
+                List<Proposition> legPropositionList = new List<Proposition>();
+
+                foreach (var prop in propString)
+                {
+                    legProposition = props(Convert.ToInt32(prop));
+                    legPropositionList.Add(legProposition);
+
+                }
+                leg.propositions = legPropositionList;
+                legList.Add(leg);
+            }
+
+
+
+            else if (BetTypeCB.Text == "BUNDLE_MULTI")
+            {
+                leg.odds = OddsTB.Text;
+                if (propString.Length > 1)
+                {
+                    leg.type = "BUNDLE";
                     Proposition legProposition = new Proposition();
                     List<Proposition> legPropositionList = new List<Proposition>();
 
@@ -129,45 +181,52 @@ namespace DigitalAPI_Forms
                     leg.propositions = legPropositionList;
                     legList.Add(leg);
                 }
-                else if (BetTypeCB.Text == "BUNDLE_MULTI")
+
+                else
                 {
-                    leg.odds = OddsTB.Text;
-                    if (propString.Length > 1)
-                    {
-                        leg.type = "BUNDLE";
-                        Proposition legProposition = new Proposition();
-                        List<Proposition> legPropositionList = new List<Proposition>();
+                    leg.propositionId = Convert.ToInt32(propositionIdTB.Text);
+                    leg.type = "WIN";
+                    legList.Add(leg);
 
-                        foreach (var prop in propString)
-                        {
-                            legProposition = props(Convert.ToInt32(prop));
-                            legPropositionList.Add(legProposition);
-
-                        }
-                        leg.propositions = legPropositionList;
-                        legList.Add(leg);
-                    }
-
-                    else
-                    {
-                        leg.propositionId = Convert.ToInt32(propositionIdTB.Text);
-                        leg.type = "WIN";
-                        legList.Add(leg);
-
-                    }
                 }
+            }
 
-                propCountLBL.Text = legList.Count().ToString() + " Props."; // add leg count to screen 
-                propositionIdTB.Text = "";
+            propCountLBL.Text = legList.Count().ToString() + " Props."; // add leg count to screen 
+            propositionIdTB.Text = "";
+        }
+
+        private void BetTypeCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (BetTypeCB.Text == "SAME_GAME_MULTI")
+            {
+                MultiplierCB.Visible = false;
+                label10.Visible = false;
+                combinedPriceTB.Visible = false;
+                label7.Visible = false;
+
+            }
+            else
+            {
+                    MultiplierCB.Visible = true;
+                    label10.Visible = true;
+                    combinedPriceTB.Visible = true;
+                    label7.Visible = true;
             }
         }
 
+
+        [DataContract]
         public class Proposition
         {
+
+            [DataMember]
             public string type { get; set; }
+            [DataMember(EmitDefaultValue = false)]
             public int propositionId { get; set; }
+            [DataMember(EmitDefaultValue = false)]
             public string odds { get; set; }
         }
+
 
         public class Leg
         {
@@ -177,22 +236,31 @@ namespace DigitalAPI_Forms
             public List<Proposition> propositions { get; set; }
         }
 
+
+        [DataContract]
         public class Bet
         {
+            [DataMember]
             public string type { get; set; }
+            [DataMember]
             public string stake { get; set; }
+            [DataMember(EmitDefaultValue = false)]
             public bool enableMultiplier { get; set; }
+            [DataMember(EmitDefaultValue = false)]
             public string combinedPrice { get; set; }
+            [DataMember]
             public List<Leg> legs { get; set; }
         }
+
 
         public class BundleBets
         {
             public List<Bet> bets { get; set; }
             public string transactionId { get; set; }
-            
+
         }
-        
-       
+
+
     }
+}
 

@@ -268,3 +268,107 @@
 05-Dec-2017 02:02:54:121 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].enableMultiplier","value":"false","message":"should be a boolean"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
 05-Dec-2017 02:03:33:508 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].enableMultiplier","value":"False","message":"should be a boolean"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
 05-Dec-2017 02:03:39:486 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].enableMultiplier","value":"true","message":"should be a boolean"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 12:03:43:532 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+22-Nov-2018 12:07:06:937 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+22-Nov-2018 12:08:43:579 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs","value":[],"message":"should have at least 1 items"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 12:19:37:628 PM        Error :  General Error: Input string was not in a correct format.
+22-Nov-2018 12:22:26:497 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs","value":[],"message":"should have at least 1 items"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 01:08:25:412 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 01:08:51:070 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs","value":[],"message":"should have at least 1 items"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 01:09:41:134 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 01:10:27:885 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 01:10:52:502 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"},{"path":"body.bets[0].legs[0].odds","value":"1.01,123","message":"value must be an odds amount e.g. '2.50'"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 01:11:06:239 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 01:12:04:609 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[1].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 01:12:46:800 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 01:29:00:903 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 01:33:52:339 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"},{"path":"body.bets[0].legs[1].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 01:55:04:252 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].type","message":"should be a valid type (FIXED_ODDS,PARIMUTUEL)"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 01:55:21:593 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].type","message":"should be a valid type (FIXED_ODDS,PARIMUTUEL)"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 01:57:26:019 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].type","message":"should be a valid type (FIXED_ODDS,PARIMUTUEL)"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 01:58:43:992 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:12:08:137 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:12:09:407 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:12:10:189 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:14:09:883 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:17:31:431 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:18:12:568 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:18:45:512 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:19:05:798 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:22:29:125 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:25:00:046 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:25:39:256 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:26:05:893 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"},{"path":"body.bets[0].legs[1].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:35:23:830 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs","value":[],"message":"should have at least 1 items"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:35:27:918 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:39:37:634 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:39:48:305 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:54:32:267 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[1].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 02:57:49:855 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[1].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"},{"path":"body.bets[0].legs[2].propositions","value":[{"odds":"1.01","propositionId":3333,"type":"WIN"}],"message":"should have at least 2 items"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 03:09:33:864 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[1].propositions","value":[{"odds":"1.01","propositionId":851511,"type":"WIN"}],"message":"should have at least 2 items"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 03:15:23:214 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[2].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 03:38:36:573 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+22-Nov-2018 03:39:22:309 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"},{"path":"body.bets[0].legs[1].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+27-Nov-2018 06:06:05:499 PM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+27-Nov-2018 06:07:09:142 PM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+27-Nov-2018 06:07:14:834 PM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+27-Nov-2018 06:08:13:862 PM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+27-Nov-2018 09:49:45:817 PM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+27-Nov-2018 09:51:03:831 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs","value":[],"message":"should have at least 1 items"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+27-Nov-2018 09:51:22:952 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs[0].type","value":"SAME_GAME_MULTI","message":"should be a valid bet type"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+27-Nov-2018 09:51:53:410 PM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+27-Nov-2018 10:07:56:128 PM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+27-Nov-2018 10:12:19:440 PM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+27-Nov-2018 10:19:44:972 PM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+27-Nov-2018 10:22:16:416 PM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+28-Nov-2018 10:49:11:597 AM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+28-Nov-2018 10:55:44:849 AM        Error :  Betslip call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+28-Nov-2018 11:06:37:123 AM        Error :  Betslip call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+28-Nov-2018 11:06:46:286 AM        Error :  Betslip call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+28-Nov-2018 11:06:58:990 AM        Error :  Betslip call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+28-Nov-2018 11:07:44:157 AM        Error :  Betslip call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+28-Nov-2018 02:26:53:038 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+28-Nov-2018 02:26:59:627 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+28-Nov-2018 02:27:05:888 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+28-Nov-2018 02:27:06:584 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+28-Nov-2018 02:27:07:584 PM        Error :  General Error: Input string was not in a correct format.
+28-Nov-2018 02:40:28:819 PM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+28-Nov-2018 02:51:20:061 PM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+28-Nov-2018 02:51:46:306 PM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+28-Nov-2018 02:52:01:100 PM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+28-Nov-2018 02:52:51:188 PM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+28-Nov-2018 02:53:45:089 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+28-Nov-2018 02:53:49:942 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+28-Nov-2018 02:53:55:633 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+28-Nov-2018 03:34:55:757 PM        Error :  General Error: Input string was not in a correct format.
+28-Nov-2018 03:35:05:973 PM        Error :  General Error: Input string was not in a correct format.
+28-Nov-2018 03:48:52:708 PM        Error :  General Error: Input string was not in a correct format.
+28-Nov-2018 03:49:20:017 PM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+28-Nov-2018 03:49:33:844 PM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+28-Nov-2018 03:50:48:986 PM        Error :  General Error: Index was outside the bounds of the array.
+29-Nov-2018 10:35:22:158 AM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+29-Nov-2018 10:54:40:643 AM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs","value":[],"message":"should have at least 1 items"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+29-Nov-2018 10:54:40:887 AM        Error :  Betslip call: Details of reason: [] {0}{"error":{"details":[{"path":"body.bets[0].legs","value":[],"message":"should have at least 1 items"}],"code":"INVALID_SYNTAX_ERROR","message":"Invalid request payload"}}
+29-Nov-2018 11:05:01:539 AM        Error :  enquirybundlePrice call: Details of reason: [] {0}{"code":"INVALID_REQUEST","message":"Invalid Request"}
+
+29-Nov-2018 01:11:35:429 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}
+29-Nov-2018 01:13:31:318 PM        Error :  Betslip call: Details of reason: [] {0}{"error":{"code":"RESOURCE_NOT_FOUND_ERROR","message":""}}

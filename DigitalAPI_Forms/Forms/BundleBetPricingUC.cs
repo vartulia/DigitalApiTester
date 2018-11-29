@@ -12,6 +12,7 @@ using System.Net;
 using System.Net.Security;
 using System.IO;
 using System.Runtime.Serialization.Json;
+using System.Runtime.Serialization;
 
 namespace DigitalAPI_Forms
 {
@@ -19,6 +20,7 @@ namespace DigitalAPI_Forms
     {
         DigitalAPItester digitalAPI;
         List<Leg> EnquiryLegList = new List<Leg>();
+        Logger log = new Logger(@"");
         public BundleBetPricingUC(DigitalAPItester mainForm)
         {
             digitalAPI = mainForm;
@@ -28,8 +30,8 @@ namespace DigitalAPI_Forms
 
         private void bundlePriceBTN_Click(object sender, EventArgs e)
         {
-            EnquiryLegList.Clear();
-            addPropToEnqury();
+            //EnquiryLegList.Clear();
+            //addPropToEnqury();
 
             //Bet Details
             string PropId = propositionIdTB.Text;
@@ -45,9 +47,8 @@ namespace DigitalAPI_Forms
 
             bundleEnquiry.bets = betList;
 
-
             ClientDetails cd = new ClientDetails();
-            cd.channel = "TERMINAL";
+            cd.channel = "WEB";
             cd.jurisdiction = "VIC";
 
             bundleEnquiry.clientDetails = cd;
@@ -55,6 +56,8 @@ namespace DigitalAPI_Forms
             string reqJsontoString = jsonRequestEnquiryToString(bundleEnquiry);
             digitalAPI.enquirybundlePrice(reqJsontoString, false, 1);
 
+            EnquiryLegList.Clear();
+            oddsCountLBL.Text = "0 Legs";
 
         }
 
@@ -85,19 +88,28 @@ namespace DigitalAPI_Forms
         {
             Leg leg = new Leg();
             string[] propString = propositionIdTB.Text.Split(',');
+            string[] oddsString = oddsTB.Text.Split(',');
 
             //leg.odds = OddsTB.Text;
-            leg.type = "BUNDLE";
+            leg.type = typeCB.Text;
 
             Proposition legProposition = new Proposition();
             List<Proposition> legPropositionList = new List<Proposition>();
 
-            foreach (var prop in propString)
+            try
             {
-                legProposition = propsEnquiry(Convert.ToInt32(prop));
-                legPropositionList.Add(legProposition);
-
+                for (int i = 0; i < propString.Length; i++)
+                {
+                    legProposition = propsEnquiry(Convert.ToInt32(propString[i]), Convert.ToDouble(oddsString[i]));
+                    legPropositionList.Add(legProposition);
+                }
             }
+            catch(Exception error)
+            {
+                log.LogError("General Error: " + error.Message.ToString(), System.Diagnostics.EventLogEntryType.Error);
+            }
+            
+
             leg.propositions = legPropositionList;
             EnquiryLegList.Add(leg);
         }
@@ -110,12 +122,18 @@ namespace DigitalAPI_Forms
             public string jurisdiction { get; set; }
         }
 
-
-
         public class Proposition
         {
             public string type { get; set; }
             public int propositionId { get; set; }
+            public Odds odds { get; set; }
+        }
+
+        [DataContract]
+        public class Odds
+        {
+            [DataMember(Name = "decimal")]
+            public double Decimal { get; set; }
         }
 
         public class Leg
@@ -138,15 +156,25 @@ namespace DigitalAPI_Forms
 
         
 
-        public Proposition propsEnquiry(int prop)
+        public Proposition propsEnquiry(int prop, double decimalvalue)
         {
             Proposition proposition = new Proposition();
+            Odds odds = new Odds();
 
             proposition.propositionId = prop;
             //proposition.odds = OddsTB.Text;
             proposition.type = "WIN";
+            odds.Decimal = decimalvalue;
+            proposition.odds = odds;
 
             return proposition;
+        }
+
+        private void addLegBTN_Click_1(object sender, EventArgs e)
+        {
+            addPropToEnqury();
+            propositionIdTB.Clear();
+            oddsCountLBL.Text = EnquiryLegList.Count().ToString() + " Legs";
         }
     }
 }

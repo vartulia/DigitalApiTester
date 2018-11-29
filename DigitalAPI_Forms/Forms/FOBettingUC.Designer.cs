@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.MultiplierCB = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.BetTypeCB = new System.Windows.Forms.ComboBox();
             this.BonusBetTokenTB = new System.Windows.Forms.TextBox();
@@ -43,6 +45,8 @@
             this.OddsTB = new System.Windows.Forms.TextBox();
             this.propositionIdTB = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.EachWayMultiplierCB = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.PLACEInvestAmtTB = new System.Windows.Forms.TextBox();
             this.secondaryOddsEW_LBL = new System.Windows.Forms.Label();
@@ -61,10 +65,6 @@
             this.costEnquiryCKBox = new System.Windows.Forms.CheckBox();
             this.getBonusBetTokensCmd = new System.Windows.Forms.Button();
             this.copyTSNBTN = new System.Windows.Forms.Button();
-            this.MultiplierCB = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.EachWayMultiplierCB = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -92,6 +92,27 @@
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Request";
+            // 
+            // MultiplierCB
+            // 
+            this.MultiplierCB.FormattingEnabled = true;
+            this.MultiplierCB.Items.AddRange(new object[] {
+            "false",
+            "true"});
+            this.MultiplierCB.Location = new System.Drawing.Point(105, 140);
+            this.MultiplierCB.Name = "MultiplierCB";
+            this.MultiplierCB.Size = new System.Drawing.Size(57, 21);
+            this.MultiplierCB.TabIndex = 126;
+            this.MultiplierCB.Text = "false";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(46, 143);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(51, 13);
+            this.label10.TabIndex = 125;
+            this.label10.Text = "Multiplier:";
             // 
             // label7
             // 
@@ -206,7 +227,7 @@
             this.propositionIdTB.Name = "propositionIdTB";
             this.propositionIdTB.Size = new System.Drawing.Size(112, 20);
             this.propositionIdTB.TabIndex = 1;
-            this.propositionIdTB.Text = "451201";
+            this.propositionIdTB.Text = "823810";
             // 
             // groupBox2
             // 
@@ -233,6 +254,27 @@
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Request";
+            // 
+            // EachWayMultiplierCB
+            // 
+            this.EachWayMultiplierCB.FormattingEnabled = true;
+            this.EachWayMultiplierCB.Items.AddRange(new object[] {
+            "false",
+            "true"});
+            this.EachWayMultiplierCB.Location = new System.Drawing.Point(120, 153);
+            this.EachWayMultiplierCB.Name = "EachWayMultiplierCB";
+            this.EachWayMultiplierCB.Size = new System.Drawing.Size(57, 21);
+            this.EachWayMultiplierCB.TabIndex = 128;
+            this.EachWayMultiplierCB.Text = "false";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(58, 156);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(51, 13);
+            this.label8.TabIndex = 127;
+            this.label8.Text = "Multiplier:";
             // 
             // label6
             // 
@@ -361,7 +403,7 @@
             this.propositionIdEW_TB.Name = "propositionIdEW_TB";
             this.propositionIdEW_TB.Size = new System.Drawing.Size(112, 20);
             this.propositionIdEW_TB.TabIndex = 1;
-            this.propositionIdEW_TB.Text = "451202";
+            this.propositionIdEW_TB.Text = "823820";
             // 
             // costEnquiryCKBox
             // 
@@ -392,48 +434,6 @@
             this.copyTSNBTN.Text = "Copy TSN";
             this.copyTSNBTN.UseVisualStyleBackColor = true;
             this.copyTSNBTN.Click += new System.EventHandler(this.copyTSNBTN_Click);
-            // 
-            // MultiplierCB
-            // 
-            this.MultiplierCB.FormattingEnabled = true;
-            this.MultiplierCB.Items.AddRange(new object[] {
-            "false",
-            "true"});
-            this.MultiplierCB.Location = new System.Drawing.Point(105, 140);
-            this.MultiplierCB.Name = "MultiplierCB";
-            this.MultiplierCB.Size = new System.Drawing.Size(57, 21);
-            this.MultiplierCB.TabIndex = 126;
-            this.MultiplierCB.Text = "false";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(46, 143);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 13);
-            this.label10.TabIndex = 125;
-            this.label10.Text = "Multiplier:";
-            // 
-            // EachWayMultiplierCB
-            // 
-            this.EachWayMultiplierCB.FormattingEnabled = true;
-            this.EachWayMultiplierCB.Items.AddRange(new object[] {
-            "false",
-            "true"});
-            this.EachWayMultiplierCB.Location = new System.Drawing.Point(120, 153);
-            this.EachWayMultiplierCB.Name = "EachWayMultiplierCB";
-            this.EachWayMultiplierCB.Size = new System.Drawing.Size(57, 21);
-            this.EachWayMultiplierCB.TabIndex = 128;
-            this.EachWayMultiplierCB.Text = "false";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(58, 156);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 13);
-            this.label8.TabIndex = 127;
-            this.label8.Text = "Multiplier:";
             // 
             // FOBettingUC
             // 

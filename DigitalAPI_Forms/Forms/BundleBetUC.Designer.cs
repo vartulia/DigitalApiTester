@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.MultiplierCB = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.retainBetCKB = new System.Windows.Forms.CheckBox();
             this.propCountLBL = new System.Windows.Forms.Label();
             this.addLegBTN = new System.Windows.Forms.Button();
@@ -43,8 +45,6 @@
             this.BettypeLBL = new System.Windows.Forms.Label();
             this.OddsTB = new System.Windows.Forms.TextBox();
             this.propositionIdTB = new System.Windows.Forms.TextBox();
-            this.MultiplierCB = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +72,27 @@
             this.groupBox2.TabIndex = 30;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Request";
+            // 
+            // MultiplierCB
+            // 
+            this.MultiplierCB.FormattingEnabled = true;
+            this.MultiplierCB.Items.AddRange(new object[] {
+            "false",
+            "true"});
+            this.MultiplierCB.Location = new System.Drawing.Point(102, 124);
+            this.MultiplierCB.Name = "MultiplierCB";
+            this.MultiplierCB.Size = new System.Drawing.Size(57, 21);
+            this.MultiplierCB.TabIndex = 128;
+            this.MultiplierCB.Text = "false";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(43, 127);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(51, 13);
+            this.label10.TabIndex = 127;
+            this.label10.Text = "Multiplier:";
             // 
             // retainBetCKB
             // 
@@ -116,12 +137,14 @@
             this.BetTypeCB.FormattingEnabled = true;
             this.BetTypeCB.Items.AddRange(new object[] {
             "BUNDLE",
-            "BUNDLE_MULTI"});
+            "BUNDLE_MULTI",
+            "SAME_GAME_MULTI"});
             this.BetTypeCB.Location = new System.Drawing.Point(105, 23);
             this.BetTypeCB.Name = "BetTypeCB";
             this.BetTypeCB.Size = new System.Drawing.Size(113, 21);
             this.BetTypeCB.TabIndex = 13;
             this.BetTypeCB.Text = "BUNDLE";
+            this.BetTypeCB.SelectedIndexChanged += new System.EventHandler(this.BetTypeCB_SelectedIndexChanged);
             // 
             // combinedPriceTB
             // 
@@ -197,30 +220,9 @@
             // 
             this.propositionIdTB.Location = new System.Drawing.Point(106, 47);
             this.propositionIdTB.Name = "propositionIdTB";
-            this.propositionIdTB.Size = new System.Drawing.Size(112, 20);
+            this.propositionIdTB.Size = new System.Drawing.Size(257, 20);
             this.propositionIdTB.TabIndex = 1;
-            this.propositionIdTB.Text = "451541,451542";
-            // 
-            // MultiplierCB
-            // 
-            this.MultiplierCB.FormattingEnabled = true;
-            this.MultiplierCB.Items.AddRange(new object[] {
-            "false",
-            "true"});
-            this.MultiplierCB.Location = new System.Drawing.Point(102, 124);
-            this.MultiplierCB.Name = "MultiplierCB";
-            this.MultiplierCB.Size = new System.Drawing.Size(57, 21);
-            this.MultiplierCB.TabIndex = 128;
-            this.MultiplierCB.Text = "false";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(43, 127);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 13);
-            this.label10.TabIndex = 127;
-            this.label10.Text = "Multiplier:";
+            this.propositionIdTB.Text = "822335,822124";
             // 
             // BundleBetUC
             // 

@@ -177,8 +177,8 @@
             "FixedOddsSellLiveBet_Multi",
             "CancelBet",
             "ScanRetailTicket",
-            "BundleBet",
-            "BundleBetPricing"});
+            "BundleBet/SGM",
+            "BundleBet/SGM-Pricing"});
             this.BettingCB.Location = new System.Drawing.Point(82, 129);
             this.BettingCB.Name = "BettingCB";
             this.BettingCB.Size = new System.Drawing.Size(162, 21);
@@ -354,7 +354,7 @@
             this.Controls.Add(this.addressLBL);
             this.Controls.Add(this.ReponseLBL);
             this.Name = "DigitalAPItester";
-            this.Text = "Digital API tester v2.19";
+            this.Text = "Digital API tester v2.21";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.DigitalAPItester_Load);
             this.ResumeLayout(false);

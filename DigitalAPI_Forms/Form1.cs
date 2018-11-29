@@ -6082,7 +6082,7 @@ namespace DigitalAPI_Forms
                 usr37.Show();
                 panel1.Controls.Add(usr37);
             }
-            if (BettingCB.Text == "BundleBet")
+            if (BettingCB.Text == "BundleBet/SGM")
             {
                 panel1.Controls.Clear();
                 panel1.Visible = true;
@@ -6090,7 +6090,7 @@ namespace DigitalAPI_Forms
                 usr38.Show();
                 panel1.Controls.Add(usr38);
             }
-            if (BettingCB.Text == "BundleBetPricing")
+            if (BettingCB.Text == "BundleBet/SGM-Pricing")
             {
                 panel1.Controls.Clear();
                 panel1.Visible = true;
